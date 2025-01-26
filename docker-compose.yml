@@ -1,0 +1,34 @@
+services:
+  orquestrador:
+    build:
+      context: ./orquestrador
+      dockerfile: Dockerfile
+    container_name: orquetrador_app
+    ports:
+      - "3000:3000"
+    networks:
+      - mfe
+    
+
+  uteis:
+    build:
+      context: ./uteis
+      dockerfile: Dockerfile
+    container_name: uteis_app
+    ports:
+      - "3001:3001"
+    networks:
+      - mfe
+  
+  modulo:
+    build:
+      context: ./modulo
+      dockerfile: Dockerfile
+    container_name: modulo_app
+    ports:
+      - "3002:3002"
+    networks:
+      - mfe
+
+networks:
+  mfe:

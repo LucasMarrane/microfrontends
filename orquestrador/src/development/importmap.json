@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.3/lib/system/single-spa.min.js",
+    "react": "https://unpkg.com/react@18.3.1/umd/react.development.js",
+    "react-dom": "https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js",
+    "react-dom/client": "https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js",
+
+    "@template/root-config": "/template-root-config.js",
+    "@template/uteis": "http://localhost:3001/template-uteis.js",
+
+    "@template/modulo": "http://localhost:3002/template-modulo.js"
+  }
+}
